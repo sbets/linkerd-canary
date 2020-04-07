@@ -31,3 +31,8 @@ kubectl apply -f example_app.yaml
 kubectl apply -f automated_canary_analysis.yaml
 ```
 
+Next updating action will create canary pod, split traffic, and analaze metrics from prometheus.
+In case if everything ok, it will update primary pod to the new version, and split 100% of traffic to the new primary pod.
+Canary pod will be removed once new primary pod is running.
+
+![Split traffic screenshot](image/canary_traffic_split.png)
