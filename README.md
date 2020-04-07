@@ -26,7 +26,7 @@ kubectl create ns test
 kubectl apply -f example_app.yaml
 ```
 
-Step 3 - Install Canary definition
+* Step 3 - Install Canary definition
 ```
 kubectl apply -f automated_canary_analysis.yaml
 ```
